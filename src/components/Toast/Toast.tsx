@@ -4,7 +4,7 @@ interface IToastProps {
 
 const Toast = ({ message }: IToastProps) => {
   return(
-    <div className="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-red-100 rounded-lg">
+    <div className="flex items-center w-full p-4 mb-4 text-gray-500 bg-red-100 rounded-lg">
       <div
         className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 rounded-lg">
         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
