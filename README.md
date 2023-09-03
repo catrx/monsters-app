@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# Points d'amélioration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Qualité du code
 
-## Available Scripts
+- Hooks de pré-commit pour lancer Prettier et ESLint
+- Utiliser un style guide (ex: Airbnb ou Google)
+- Les tests d'intégrations sont faits mais ce serait mieux d'avoir des tests unitaires sur chaque composant (cause: Braderie de Lille).
 
-In the project directory, you can run:
+## Evolutions
+
+- Ajouter un gestionnaire de state (ex: Redux)
+- Utiliser la fonctionnalité de recherche de l'API Donjons et Dragons plutot que de filtrer directement côté client.
+
+## Bonnes pratiques
+
+- Travailler en "Git flow" et faire une branche feature ou fix à partir de la branche develop pour faire des Pull Requests
+- CamelCase et nommage cohérent des fonctions et des variables
 
 ### `npm start`
 
