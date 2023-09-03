@@ -16,7 +16,7 @@ function App() {
     if (!searchTerm) return null;
     return data
       .sort((a, b) => Object.keys(b.skills).length - Object.keys(a.skills).length)
-      .filter((monster) => monster.name.includes(searchTerm));
+      .filter((monster) => monster.name.toLowerCase().includes(searchTerm.toLowerCase()));
   }, [data, searchTerm]);
 
   return (
@@ -48,7 +48,7 @@ const Content = ({ data, loading, error, searchTerm, setSearchTerm }: IContentPr
   return (
     <div>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <div className="mt-4">
+      <div className='mt-4'>
         <MonstersList monsters={data} />
       </div>
     </div>

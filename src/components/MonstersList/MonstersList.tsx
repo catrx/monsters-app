@@ -16,8 +16,8 @@ const MonstersList = ({ monsters }: IMonstersListProps) => {
     <div className='overflow-x-auto rounded border border-gray-200'>
       <table className='w-full text-sm text-left text-gray-500'>
         <tbody>
-          {monsters.map((monster) => (
-            <MonsterRow monster={monster} />
+          {monsters.map((monster, i) => (
+            <MonsterRow key={i} monster={monster} />
           ))}
         </tbody>
       </table>

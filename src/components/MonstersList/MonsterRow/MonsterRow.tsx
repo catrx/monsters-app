@@ -6,7 +6,7 @@ interface IMonsterRowProps {
 
 const MonsterRow = ({ monster }: IMonsterRowProps) => {
   return (
-    <tr className='bg-white border-b hover:bg-gray-50'>
+    <tr data-testid='monster-row' className='bg-white border-b hover:bg-gray-50'>
       <th scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>
         {monster.name}
       </th>

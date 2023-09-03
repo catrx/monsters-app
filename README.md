@@ -1,8 +1,20 @@
-# Points d'améliorations
+# Points d'amélioration
 
 ## Qualité du code
 
-In the project directory, you can run:
+- Hooks de pré-commit pour lancer Prettier et ESLint
+- Utiliser un style guide (ex: Airbnb ou Google)
+- Les tests d'intégrations sont faits mais ce serait mieux d'avoir des tests unitaires sur chaque composant (cause: Braderie de Lille).
+
+## Evolutions
+
+- Ajouter un gestionnaire de state (ex: Redux)
+- Utiliser la fonctionnalité de recherche de l'API Donjons et Dragons plutot que de filtrer directement côté client.
+
+## Bonnes pratiques
+
+- Travailler en "Git flow" et faire une branche feature ou fix à partir de la branche develop pour faire des Pull Requests
+- CamelCase et nommage cohérent des fonctions et des variables
 
 ### `npm start`
 

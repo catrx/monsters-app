@@ -16,6 +16,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }: ISearchBarProps) => {
   return (
     <form>
       <input
+        data-testid='search-bar'
         type='text'
         className='p-2 rounded border border-gray-200 focus:bg-white focus:outline-none focus:ring-2 focus:border-transparent box-border w-full'
         placeholder='Rechercher un monstre par son nom...'
