@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { Monster } from '../types';
 
 interface IUseMonsters {
-  data: Monster[],
-  loading: boolean,
-  error: any
+  data: Monster[];
+  loading: boolean;
+  error: any;
 }
 
 const useMonsters = (url: string): IUseMonsters => {
@@ -17,13 +17,13 @@ const useMonsters = (url: string): IUseMonsters => {
       try {
         const response = await fetch(url);
 
-        if(response.ok) {
+        if (response.ok) {
           const json = await response.json();
 
           setData(json.results);
           setLoading(false);
         } else {
-          throw new Error(`Error with status ${response.status}`)
+          throw new Error(`Error with status ${response.status}`);
         }
       } catch (error) {
         setError(error);
